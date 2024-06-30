@@ -1,0 +1,99 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(90deg, rgb(243, 243, 255) 0%, rgb(254, 248, 255) 51%, rgb(255, 250, 253) 100%);
+    color: black;
+}
+
+header {
+    font-family: "Playwrite IT Moderna", cursive;
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.8rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 2px rgb(0, 0, 0),
+        8px 8px 0 0 rgb(0, 0, 0);
+}
+
+.product-image {
+    width: 30%;
+    height: auto;
+    transition: .5s;
+}
+
+.product-image:hover {
+    width: 50%;
+    height: auto;
+}
+
+.product-details {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #e8491d;
+    margin: 1rem 0;
+}
+
+.cta {
+    padding: 1rem 2rem;
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    transition: .5s;
+}
+
+.cta:hover {
+    box-shadow: 5px 5px 0 0 rgb(0, 0, 0);
+    scale: 1.05;
+}
+
+.cta:active {
+    scale: 1;
+    box-shadow: none;
+}
+
+footer {
+    text-align: center;
+    padding: .5rem 0;
+    background-color: black;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+}
